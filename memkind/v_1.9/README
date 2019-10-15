@@ -1,0 +1,12 @@
+# Memkind examples
+
+The example directory contains example codes that use the memkind
+interface.
+
+The default pmem path is "/tmp/".
+
+Custom directory is pass as first argument to all of PMEM example programs,
+e.g. to execute pmem_malloc example in /mnt/pmem location, call:
+
+    ./pmem_malloc /mnt/pmem/
+
