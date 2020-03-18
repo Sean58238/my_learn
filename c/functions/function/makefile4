@@ -1,0 +1,13 @@
+cc = gcc
+prom = calc4
+deps = cal.h
+obj = cal.o framework.o
+
+$(prom):$(obj)
+	$(cc) -o ${prom} $(obj)
+
+%.o:%.c $(deps)
+	$(cc) -c $< -o $@
+
+clean:
+	rm -rf ${obj} $(prom)
